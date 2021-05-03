@@ -17,11 +17,11 @@ open file using command :
 
 `sudo nano /etc/systemd/system/dbus-org.bluez.service`
 
-Start bluetooth daemon in compatibility mode
+Start bluetooth daemon in compatibility mode by adding `-C` at the end of line given below 
 
-`ExecStart=/usr/lib/bluetooth/bluetoothhd -C`
+`ExecStart=/usr/lib/bluetooth/bluetoothd` to `ExecStart=/usr/lib/bluetooth/bluetoothd -C` 
 
-Add spp profile
+Add SPP profile by adding this line 
 
 `ExecStartPost=/usr/bin/sdptool add SP`
 
