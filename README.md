@@ -28,11 +28,9 @@ Add spp profile
 Save and Reboot Pi
 
 ## Enabling communication
-Now Open terminal and run command:
+Now Open terminal and run command given below. This command will enable device to watch for incoming Bluetooth connections
 
 `sudo rfcomm watch hci0`
-
-Enable device to watch for incoming Bluetooth connections
 
 Now reading data from serial using python script.
 
