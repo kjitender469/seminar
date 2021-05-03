@@ -11,7 +11,7 @@ Run the following command :
 
 Reboot Pi
 
-
+`sudo reboot now`
 
 Setup SPP bluetooth profile by editing file given below
 
@@ -30,9 +30,13 @@ Add SPP (Serial Port Profile) by adding this line
 Save and Reboot Pi
 
 ## Enabling communication
-Now Open terminal and run command given below. This command will enable device to watch for incoming Bluetooth connections
+Now Open terminal and run command given below. This command will enable device to watch for incoming bluetooth connections
 
 `sudo rfcomm watch hci0`
+
+Check available serial port using command:
+
+`python3 -m serial.tools.list_ports`
 
 Now reading data from serial using python script.
 
