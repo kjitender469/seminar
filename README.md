@@ -6,19 +6,19 @@
 ##Bluetooth Setup
 Setup SPP bluetooth profile by editing file given below
 open file using command :
-sudo nano /etc/systemd/system/dbus-org.bluez.service
+`sudo nano /etc/systemd/system/dbus-org.bluez.service`
 
 Start bluetooth daemon in 'compatibility' mode:
-ExecStart=/usr/lib/bluetooth/bluetoothhd -C
+`ExecStart=/usr/lib/bluetooth/bluetoothhd -C`
 
 Add SPP Profile:
-ExecStartPost=/usr/bin/sdptool add SP
+`ExecStartPost=/usr/bin/sdptool add SP`
 
 Save and Reboot Pi
 
 # Enabling communication
 Now Open terminal and run command:
-sudo rfcomm watch hci0
+`sudo rfcomm watch hci0`
 Enable device to watch for incoming Bluetooth connections
 
 Now reading data from serial using python script.
