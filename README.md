@@ -3,7 +3,7 @@
 ## RaspberryPi Pinout
 ![GPIO-Pinout-Diagram-2](https://user-images.githubusercontent.com/34370544/116787684-23267680-aac3-11eb-806c-ba600c4b93f6.png)
 
-##Bluetooth Setup
+## Bluetooth Setup
 Setup SPP bluetooth profile by editing file given below
 open file using command :
 `sudo nano /etc/systemd/system/dbus-org.bluez.service`
@@ -22,4 +22,5 @@ Now Open terminal and run command:
 Enable device to watch for incoming Bluetooth connections
 
 Now reading data from serial using python script.
+`python3 rpi_bluetooth_serial.py`
 
