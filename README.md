@@ -13,6 +13,10 @@ Reboot Pi
 
 `sudo reboot now`
 
+Check bluetooth service status
+
+`service bluetooth status`
+
 Setup SPP bluetooth profile by editing file given below
 
 open file using command :
